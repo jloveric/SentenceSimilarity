@@ -1,0 +1,19 @@
+{
+  "name": "sentence-similarity-clockmaker",
+  "version": "1.0.0",
+  "description": "Sentence similarity algorithms used in the clockmaker.y",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jloveric/SentenceSimilarity.git"
+  },
+  "author": "John Loverich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jloveric/SentenceSimilarity/issues"
+  },
+  "homepage": "https://github.com/jloveric/SentenceSimilarity#readme"
+}
