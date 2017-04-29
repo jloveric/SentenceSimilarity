@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/jloveric/SentenceSimilarity/issues"
   },
-  "homepage": "https://github.com/jloveric/SentenceSimilarity#readme"
+  "homepage": "https://github.com/jloveric/SentenceSimilarity#readme",
+  "dependencies": {
+    "clone": "^2.1.1",
+    "debug": "^2.6.6",
+    "natural": "^0.5.1"
+  }
 }
