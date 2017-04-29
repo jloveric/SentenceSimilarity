@@ -1,7 +1,7 @@
 {
-  "name": "sentence-similarity-clockmaker",
+  "name": "sentence-similarity",
   "version": "1.0.0",
-  "description": "Sentence similarity algorithms used in the clockmaker.y",
+  "description": "Sentence similarity algorithm.",
   "main": "index.js",
   "scripts": {
     "test": "test"
@@ -19,6 +19,7 @@
   "dependencies": {
     "clone": "^2.1.1",
     "debug": "^2.6.6",
+    "helper-clockmaker": "^1.0.0",
     "natural": "^0.5.1"
   }
 }
