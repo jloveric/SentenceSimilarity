@@ -25,3 +25,20 @@ let winkOpts = { f: similarityScore.winklerMetaphone, options : {threshold: 0} }
 
 console.log(similarity(s1,s2,winkOpts))
 ```
+
+gives
+
+```json
+{ matched: [ 3, 5, -1, 0, 1, 4 ],
+  matchScore: 
+   [ 0.27777777777777773,
+     1,
+     0,
+     0.9133333333333333,
+     0.32499999999999996,
+     1 ],
+  exact: 2,
+  score: 3.516111111111111,
+  order: 0.06666666666666687,
+  size: 0.16666666666666666 }
+```
