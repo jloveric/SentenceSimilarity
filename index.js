@@ -1,3 +1,4 @@
+"use strict"
 
 let similarityScore = require('./SimilarityScore.js')
 let sentenceSimilarity = require('./SentenceSimilarity.js')
