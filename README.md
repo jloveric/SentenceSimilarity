@@ -8,3 +8,20 @@ words that exist in the compared sentence.
 
 By multiplying score\*order\*size or exact\*order\*size, one will get a score between 0 and 1.  In addition, the user can
 supply wildcards that appear in parentheses 'Your name is (name)' where the wildcard '(name)' is ignored in the comparison.  This allows the similarity score to be used in slot filling.
+
+# Example
+```javascript
+"use strict"
+
+let ss = require('sentence-similarity')
+
+let similarity = ss.sentenceSimilarity;
+let similarityScore = ss.similarityScore;
+
+let s1 = ['how','close','is','this','to','that']
+let s2 = ['these','two','are','not','that','close']
+
+let winkOpts = { f: similarityScore.winklerMetaphone, options : {threshold: 0} }
+
+console.log(similarity(s1,s2,winkOpts))
+```
