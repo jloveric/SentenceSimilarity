@@ -3,7 +3,7 @@
 let natural = require('natural')
 
 let dlev = require('damerau-levenshtein')
-let Helper = require('sb/etc/Helper.js')
+let Helper = require('helper-clockmaker')
 let debug = require('debug')('SimilarityScore')
 
 let winklerMetaphone = function(a, b, options) {

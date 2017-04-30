@@ -1,7 +1,7 @@
 "use strict";
 
 let natural = require('natural')
-let Helper = require('sb/etc/Helper.js')
+let Helper = require('helper-clockmaker')
 let debug = require('debug')('SentenceSimilarity')
 let deepcopy = require('clone')
 

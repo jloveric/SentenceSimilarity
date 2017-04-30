@@ -6,5 +6,5 @@ on multiple criteria.  The 4 similarities are 'exact' which is the number of wor
 the words in the two sentences. 'size' is the score determined by comparing the number of words to match to the number of
 words that exist in the compared sentence.
 
-By multiplying score*order*size or exact*order*size, one will get a score between 0 and 1.  In addition, the user can
+By multiplying score\*order\*size or exact\*order\*size, one will get a score between 0 and 1.  In addition, the user can
 supply wildcards that appear in parentheses 'Your name is (name)' where the wildcard '(name)' is ignored in the comparison.  This allows the similarity score to be used in slot filling.
