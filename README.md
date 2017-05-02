@@ -9,7 +9,7 @@ words that exist in the compared sentence.
 By multiplying score\*order\*size or exact\*order\*size, one will get a score between 0 and 1.  In addition, the user can
 supply wildcards that appear in parentheses 'Your name is (name)' where the wildcard '(name)' is ignored in the comparison.  This allows the similarity score to be used in slot filling.
 
-# Example
+# Example 1
 ```javascript
 "use strict"
 
@@ -57,3 +57,39 @@ let someFunc = function(a,b,options) {
 }
 ```
 several example similarity functions are provided in SimilarityScore.js.
+
+# Example 2 (wildcard)
+
+Wildcards are placed between parentheses and allow the location of slots and slot values to be identified.  In the following example (name) is a wildcard and "ripley" is the slot value.
+
+```javascript
+"use strict"
+
+let ss = require('sentence-similarity')
+
+let similarity = ss.sentenceSimilarity;
+let similarityScore = ss.similarityScore;
+
+let s1 = ['My','name','is','ripley']
+let s2 = ['My','name','is','(name)']
+
+let winkOpts = { f: similarityScore.winklerMetaphone, options : {threshold: 0} }
+
+console.log(similarity(s1,s2,winkOpts))
+```
+outputs
+```json
+{ matched: [ 0, 1, 2, -1 ],
+  matchScore: [ 1, 1, 1, 0 ],
+  exact: 3,
+  score: 3,
+  order: 1,
+  size: 0.3333333333333333 }
+```
+where
+```json
+matched: [ 0, 1, 2, -1 ]
+```
+indicates the index in array s2 that matches the given index in array s1.  Index 4 in s1 does not match anything
+in s2, so it may be a slot value.  We've developed a slot filler that uses this sentence similarity and it is in
+the npm module slot-filler.
