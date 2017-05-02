@@ -51,8 +51,9 @@ let opts = { f: someFunc, options : {threshold: 0.1} }
 where
 ```javascript
 let someFunc = function(a,b,options) {
-  let a = levenshteing(a,b);//for example
+  let a = levenshtein(a,b);//for example
   if(a<options.threshold) a = 0;
   return a
 }
 ```
+several example similarity functions are provided in SimilarityScore.js.
