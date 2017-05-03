@@ -1,7 +1,7 @@
 "use strict"
 
-let similarity = require('./SentenceSimilarity.js')
-let similarityScore = require('./SimilarityScore.js')
+let similarity = require('../SentenceSimilarity.js')
+let similarityScore = require('../SimilarityScore.js')
 
 let sentence0 = ['Were', 'r', 'the', 'tacos']
 let sentence1 = ['Where', 'are', 'the']

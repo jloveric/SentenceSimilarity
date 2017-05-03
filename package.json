@@ -1,6 +1,6 @@
 {
   "name": "sentence-similarity",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Sentence similarity algorithm.",
   "main": "index.js",
   "scripts": {
@@ -21,8 +21,6 @@
     "damerau-levenshtein": "^1.0.4",
     "debug": "^2.6.6",
     "helper-clockmaker": "^1.0.0",
-    "jasmine": "^2.6.0",
-    "jasmine-spec-reporter": "^4.0.0",
     "natural": "^0.5.1"
   },
   "keywords": [
@@ -32,5 +30,9 @@
     "size",
     "score",
     "slot"
-  ]
+  ],
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "jasmine-spec-reporter": "^4.1.0"
+  }
 }
