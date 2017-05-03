@@ -1,7 +1,7 @@
 "use strict";
 
 let natural = require('natural')
-let Helper = require('helper-clockmaker')
+let Helper = require('helper-clockmaker').Helper
 let debug = require('debug')('SentenceSimilarity')
 let deepcopy = require('clone')
 
