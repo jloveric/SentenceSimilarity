@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jloveric/SentenceSimilarity.svg?branch=master)](https://travis-ci.org/jloveric/SentenceSimilarity)
+
 # SentenceSimilarity
 Javascript/Nodejs sentence similarity.
 
