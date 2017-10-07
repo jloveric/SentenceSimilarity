@@ -44,6 +44,14 @@ gives
   order: 0.06666666666666687,
   size: 0.16666666666666666 }
 ```
+"matched" tells you which index of s2 best matches the corresponding word in s1.  And matchScore give you the corresponding score for the matches determined in "matched".  In this case, the algorithm suggests that
+'how=not' with score (0.277)
+'close=close' with score (1)
+'is=' doesn't have a match, score(-1)
+'this=these' with score (0.91)
+'to=two' with score (0.325)
+'that=that' with score (1.0)
+
 The third parameter (opts) to the similarity(s1,s2,opts) call is an object containing the similarity measure for comparing words in a sentence as well as a option object which can be used to define additional parameters.  someFunc should return a value between 0 and 1
 defining how similar the two "words" are, where 1 means they are exactly the same and 0 means the are not at all the same.  I often use a threshold parameter that sets the similarity to 0 if the similarity is below that threshold.
 
