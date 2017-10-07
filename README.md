@@ -45,9 +45,10 @@ gives
   size: 0.16666666666666666 }
 ```
 "matched" tells you which index of s2 best matches the corresponding word in s1.  And matchScore give you the corresponding score for the matches determined in "matched".  In this case, the algorithm suggests that
+
 0. 'how=not' with score (0.277)
 1. 'close=close' with score (1)
-2. 'is=' doesn't have a match, score(-1)
+2. 'is=' doesn't have a match, score(0)
 3. 'this=these' with score (0.91)
 4. 'to=two' with score (0.325)
 5. 'that=that' with score (1.0)
