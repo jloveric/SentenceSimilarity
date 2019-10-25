@@ -21,7 +21,7 @@
     "damerau-levenshtein": "^1.0.4",
     "debug": "^2.6.6",
     "helper-clockmaker": "^1.0.0",
-    "natural": "^0.5.1"
+    "natural": "^0.6.3"
   },
   "keywords": [
     "sentence",
