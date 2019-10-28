@@ -1,6 +1,5 @@
 "use strict";
 
-let natural = require('natural')
 let Helper = require('helper-clockmaker').Helper
 let debug = require('debug')('SentenceSimilarity')
 let deepcopy = require('clone')
@@ -17,24 +16,23 @@ let orderSimilarity = function (v, otherLength) {
     //correct order.
     let offset = 0;
     let osCount = 0;
-    for (let i = 0; i < v.length; i++) {
-        let c = v[i];
+    v.forEach((c, i)=>{
         if (c >= 0) {
             osCount++;
             offset += c - i;
         }
-    }
+    })
+    
     offset = offset / osCount;
 
     let mL = Math.max(v.length, otherLength)
 
     let orderSimilarity = 0;
-    for (let i = 0; i < v.length; i++) {
-        let c = v[i];
+    v.forEach((c, i)=>{
         if (c >= 0) {
             orderSimilarity += (1.0 - Math.abs(c - i - offset) / mL)
         }
-    }
+    })
 
     if (osCount == 0) return 0.0;
 
@@ -173,11 +171,11 @@ let matchScore = function (bm, a, b) {
 let lengthScore = function (a, b) {
     
     let pCount = 0
-    for (let i = 0; i < b.length; i++) {
-        if (b[i].match(Helper.betweenParentheses)) {
+    b.forEach((val)=>{
+        if (val.match(Helper.betweenParentheses)) {
             pCount++;
         }
-    }
+    })
 
     return 1.0/(b.length-pCount)
 }
