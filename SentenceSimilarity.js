@@ -4,7 +4,6 @@ let Helper = require('helper-clockmaker').Helper
 let debug = require('debug')('SentenceSimilarity')
 let deepcopy = require('clone')
 
-
 /**
  * Order similarity should only depend on the number of matches, since
  * unmatched terms are already factored into the match similarity.
