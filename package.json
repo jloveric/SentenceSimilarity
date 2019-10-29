@@ -4,7 +4,9 @@
   "description": "Sentence similarity algorithm.",
   "main": "index.js",
   "scripts": {
-    "test": "node jasmine-runner.js"
+    "test": "node jasmine-runner.js",
+    "pretty": "prettier --write --tab-width 2 \"**/*.js\"",
+    "precommit": "lint-staged && npm test"
   },
   "repository": {
     "type": "git",
@@ -32,7 +34,23 @@
     "slot"
   ],
   "devDependencies": {
+    "husky": "^3.0.9",
     "jasmine": "^2.6.0",
-    "jasmine-spec-reporter": "^4.1.0"
+    "jasmine-spec-reporter": "^4.1.0",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test",
+      "...": "..."
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+        "npm run pretty",
+        "git add"
+    ]
   }
 }
