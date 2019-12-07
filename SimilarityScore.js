@@ -40,7 +40,4 @@ let dl = function(a, b, options) {
 let commonScore = { f: metaphoneDl, options: { threshold: 0.3 } };
 //let commonScore = { f: winklerMetaphone, options : {threshold: 0.4} }
 
-module.exports.winklerMetaphone = winklerMetaphone;
-module.exports.metaphoneDl = metaphoneDl;
-module.exports.dl = dl;
-module.exports.commonScore = commonScore;
+module.exports = { winklerMetaphone, metaphoneDl, dl, commonScore }

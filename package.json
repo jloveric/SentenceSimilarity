@@ -1,10 +1,10 @@
 {
   "name": "sentence-similarity",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "description": "Sentence similarity algorithm.",
   "main": "index.js",
   "scripts": {
-    "test": "node jasmine-runner.js",
+    "test": "jest",
     "pretty": "prettier --write --tab-width 2 \"**/*.js\"",
     "precommit": "lint-staged && npm test"
   },
@@ -35,8 +35,7 @@
   ],
   "devDependencies": {
     "husky": "^3.0.9",
-    "jasmine": "^2.6.0",
-    "jasmine-spec-reporter": "^4.1.0",
+    "jest": "^24.9.0",
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2"
   },
@@ -49,8 +48,8 @@
   },
   "lint-staged": {
     "*.js": [
-        "npm run pretty",
-        "git add"
+      "npm run pretty",
+      "git add"
     ]
   }
 }
