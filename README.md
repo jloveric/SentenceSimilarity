@@ -16,10 +16,8 @@ supply wildcards that appear in parentheses 'Your name is (name)' where the wild
 ```javascript
 "use strict"
 
-let ss = require('sentence-similarity')
-
-let similarity = ss.sentenceSimilarity;
-let similarityScore = ss.similarityScore;
+let similarity = require('sentence-similarity')
+let similarityScore = require('similarity-score')
 
 let s1 = ['how','close','is','this','to','that']
 let s2 = ['these','two','are','not','that','close']
