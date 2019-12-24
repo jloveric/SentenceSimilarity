@@ -1,6 +1,6 @@
 {
   "name": "sentence-similarity",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Sentence similarity algorithm.",
   "main": "index.js",
   "scripts": {
