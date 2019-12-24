@@ -75,10 +75,8 @@ Wildcards are placed between parentheses and allow the location of slots and slo
 ```javascript
 "use strict"
 
-let ss = require('sentence-similarity')
-
-let similarity = ss.sentenceSimilarity;
-let similarityScore = ss.similarityScore;
+let similarity = require('sentence-similarity')
+let similarityScore = require('similarity-score')
 
 let s1 = ['My','name','is','ripley']
 let s2 = ['My','name','is','(name)']
