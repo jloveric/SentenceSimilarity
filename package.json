@@ -29,7 +29,9 @@
     "order",
     "size",
     "score",
-    "slot"
+    "slot",
+    "attention",
+    "browser"
   ],
   "devDependencies": {
     "husky": "^3.0.9",
