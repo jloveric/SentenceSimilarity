@@ -18,6 +18,10 @@ supply wildcards that appear in parentheses 'Your name is (name)' where the wild
 ```bash
 npm install sentence-similarity
 ```
+and for the examples, you'll also need to install similarity-score
+```
+npm install similarity-score
+```
 
 # Example 1
 ```javascript
